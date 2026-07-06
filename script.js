@@ -17,16 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('.nav-links a');
+  const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
 
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navItems.forEach(link => {
-            link.style.color = link.getAttribute('href') === `#${entry.target.id}`
-              ? 'var(--text-primary)'
-              : '';
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') === `#${entry.target.id}`
+            );
           });
         }
       });

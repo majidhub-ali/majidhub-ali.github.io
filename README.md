@@ -2,7 +2,7 @@
 
 Professional portfolio website for **Mohammed Majid Ali**, Quality Assurance Engineer & Test Automation Specialist.
 
-**Live Site:** [https://majidhub-ali.github.io/qa-portfolio/](https://majidhub-ali.github.io/qa-portfolio/)
+**Live Site:** [https://majidhub-ali.github.io/](https://majidhub-ali.github.io/)
 
 ## About
 
